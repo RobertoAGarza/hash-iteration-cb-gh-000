@@ -8,7 +8,7 @@
 
 def select_winner(passengers)
   passengers.each do |key, value|
-    if key == "suite_a:" &&( value.start_with?("a") || value.start_with?("A") )
+    if key == ":suite_a" &&( value.start_with?("a") || value.start_with?("A") )
       puts value
     end
   end
