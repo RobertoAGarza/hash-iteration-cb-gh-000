@@ -10,7 +10,7 @@ def select_winner(passengers)
   winner = "none"
 
   passengers.each do |key, value|
-    if value.start_with?('A') && key == "suite_a:"
+    if value.start_with?('A') && key.object_id == :suite_a.object_id
       winner = value
     end
   end
