@@ -9,7 +9,7 @@
 def select_winner(passengers)
 winner = "none"
   passengers.each do |key, value|
-    if key == "suite_a" &&  value[0].uppercase == "A"
+    if key == "suite_a" &&  value.uppercase == "A"
       winner = value
     end
   end
