@@ -7,7 +7,7 @@
 # }
 
 def select_winner(passengers)
-winner = "none"
+  winner = "none"
   passengers.each do |key, value|
     if key == "suite_a" &&  value.start_with?('A')
       winner = value
