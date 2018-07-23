@@ -8,8 +8,9 @@
 
 def select_winner(passengers)
   winner = "none"
+  temp = suite_a:
   passengers.each do |key, value|
-    if value.start_with?('A') && key == suite_a
+    if value.start_with?('A') && key.object_id == temp.object_id
       winner = value
     end
   end
